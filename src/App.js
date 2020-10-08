@@ -98,8 +98,6 @@ class App extends Component {
           changed = {(event) => this.nameChangeHandler(event, person.id)}
           />
         })}
-   
-        
         </div>
       );
       // setting stlyes dynamically (i.e change button color) example
@@ -135,11 +133,11 @@ class App extends Component {
           But this --> setDynamicClassName.join(' ') *space
         */}  
 
-        <p className= {setDynamicClassName.join(' ')}>This is really working!</p>
+        <p className= {setDynamicClassName.join( ' ' )}>This is really working!</p>
 
         <button 
         style={style}
-        onClick={this.togglePersonHandler.bind('Big Bank')}>Toggle Persons</button>
+        onClick={this.togglePersonHandler}>Toggle Persons</button>
         {persons}
       </div>
       </StyleRoot>

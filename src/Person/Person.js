@@ -4,7 +4,7 @@ import Radium from 'radium';
 
 const person = (props) => {
     const radiumStyle = {
-        '@media (mid-width: 500px)' : {
+        '@media (min-width: 500px)' : {
             width : '450px'
         }
     };
@@ -18,3 +18,4 @@ const person = (props) => {
 };
 
 export default Radium(person);
+
